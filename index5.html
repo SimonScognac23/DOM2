@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea Articolo</title>
+
+    <!-- Collegamento a Bootstrap CSS tramite CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- Input per il titolo -->
+    <div class="mb-3">
+        <label for="titles" class="form-label">Titolo:</label>
+        <input type="text" class="form-control" id="title" placeholder="Inserisci il titolo">
+    </div>
+
+    <!-- Textarea per il paragrafo -->
+    <div class="mb-3">
+        <label for="content" class="form-label">Paragrafo:</label>
+        <textarea class="form-control" id="content" rows="4"
+            placeholder="Inserisci il contenuto del paragrafo"></textarea>
+    </div>
+
+    <!-- Bottone per creare l'articolo -->
+    <button id="createArticle" class="btn btn-primary">Crea Articolo</button>
+
+    <!-- Contenitore per visualizzare l'articolo che andremo a creare -->
+    <div id="articleContainer" class="mt-4"></div>
+
+    <!-- Collegamento a Bootstrap JS tramite CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
